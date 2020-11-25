@@ -1,5 +1,5 @@
 # dali-pytorch
-This is a PyTorch toolkit for accelerated ImageNet training based on the distributed mode with [NVIDIA DALI](https://github.com/NVIDIA/DALI) equipped. Though with extremely high training speed, the toolkit achieves similar or higher performance than that reported in the original papers.
+This is a PyTorch toolkit for accelerating ImageNet training based on the distributed mode with [NVIDIA DALI](https://github.com/NVIDIA/DALI) equipped. Though with extremely high training speed, the toolkit achieves similar or higher performance than that reported in the original papers.
 
 ## Main Requirements (recommended)
 
