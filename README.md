@@ -24,22 +24,26 @@ sh ./scripts/train_dist.sh 8 ./imagenet-rec imagenet_train_mbv2_cfg.py
 We evaluate our toolkit on several popular networks as follows, which achieves similar or higher performance than the original papers reported ones. All the experiments are performed on 8 TITAN-XP GPUs.
 
 Our pre-trained models and corresponding training logs can be downloaded at [DALI_MODEL_ZOO](https://drive.google.com/drive/folders/1-KHHupxYmZClxlnmrZ5X5ndObFcp98Lv?usp=sharing).
+
 | Model                | Reported Top-1(%) | Top-1(%) | Epochs | Time w/dali |
 |----------------------|-------|---------|---------|---------|---------| 
 | ResNet18 | 69.76* | 72.15 | 240 | 16h |
 | MobileNetV2 | 72.0 | 72.94 | 240 | 1d4.5h |
 | MobileNetV3 | 75.2 | 75.07 | 400 | 2d1.5h |
 | GhostNet 1.0x | 73.9 | 73.97 | 400 | 1d21.5h |
+
 *\* denotes the result reported in the torchvision model zoo.*<br>
 *"d": day; "h": hour.*
 
 ----------------------------------
 
 Comparisons between training w/ and w/o dali:
-| Model | Method | Top-1(%) | Time 
+
+| Model | Method | Top-1(%) | Time |
 |----------------------|-------|---------|---------| 
-| ResNet18 | w/ dali | 72.15 | **16h** 
-|  | w/o dali | 72.01 | 47.5h 
+| ResNet18 | w/ dali | 72.15 | **16h** |
+|  | w/o dali | 72.01 | 47.5h |
+
 *The w\o dali setting is based on the lmdb data format from the codebase of [DenseNAS](https://github.com/JaminFong/DenseNAS).*
 
 ## Acknowledgement
