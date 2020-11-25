@@ -26,7 +26,7 @@ We evaluate our toolkit on several popular networks as follows, which achieves s
 Our pre-trained models and corresponding training logs can be downloaded at [DALI_MODEL_ZOO](https://drive.google.com/drive/folders/1-KHHupxYmZClxlnmrZ5X5ndObFcp98Lv?usp=sharing).
 
 | Model                | Reported Top-1(%) | Top-1(%) | Epochs | Time w/dali |
-|----------------------|-------|---------|---------|---------|---------| 
+|----------------------|-------|---------|---------|---------| 
 | ResNet18 | 69.76* | 72.15 | 240 | 16h |
 | MobileNetV2 | 72.0 | 72.94 | 240 | 1d4.5h |
 | MobileNetV3 | 75.2 | 75.07 | 400 | 2d1.5h |
